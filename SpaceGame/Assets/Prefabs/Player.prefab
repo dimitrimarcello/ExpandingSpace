@@ -18,27 +18,28 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4491794997683266}
+  - component: {fileID: 4891442370801430}
   - component: {fileID: 212678654262972900}
-  - component: {fileID: 50494573811567434}
   - component: {fileID: 60578069182967114}
-  - component: {fileID: 114062582986584326}
+  - component: {fileID: 50494573811567434}
+  - component: {fileID: 114394398581934648}
+  - component: {fileID: 114865520562059568}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4491794997683266
+--- !u!4 &4891442370801430
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614242722813312}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.46, y: 3.19, z: 0}
-  m_LocalScale: {x: 0.11860333, y: 0.11860333, z: 0.11860333}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.62, y: 1.8, z: 0}
+  m_LocalScale: {x: 0.07584467, y: 0.07584466, z: 0.07584466}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -267,7 +268,7 @@ PolygonCollider2D:
       - {x: -0.049999997, y: 4.38}
       - {x: -0.08, y: 4.39}
       - {x: -0.099999994, y: 4.37}
---- !u!114 &114062582986584326
+--- !u!114 &114394398581934648
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -278,8 +279,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff6989157496f147badd69111bd534d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: []
+  blackHole: []
   gravity: 30
+--- !u!114 &114865520562059568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614242722813312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be86f7ba13401e4baae20858043a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpStrength: 10
 --- !u!212 &212678654262972900
 SpriteRenderer:
   m_ObjectHideFlags: 1
