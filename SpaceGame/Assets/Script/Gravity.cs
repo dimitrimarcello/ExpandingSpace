@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class Gravity : MonoBehaviour {
 
-    public GameObject planet;
-    public float gravity = 5.0f;
+    public GameObject[] planet;
+    public float gravity = 30f;
 
     private Rigidbody2D rig2d;
 
 	// Use this for initialization
 	void Start () {
         rig2d = GetComponent<Rigidbody2D>();
-	}
+        planet = GameObject.FindGameObjectsWithTag("Planet");
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 offset = planet.transform.position - transform.position;
-
-        float gravitysqr = offset.sqrMagnitude;
-
-        if (gravitysqr > 0.001f)
+        for (int i = 0; i < planet.Length; i++)
         {
-            rig2d.AddForce(gravity * offset.normalized / gravitysqr);
+            Vector2 offset = planet[i].transform.position - transform.position;
+
+            float gravitysqr = offset.sqrMagnitude;
+
+            if (gravitysqr > 0.001f && gravitysqr < 15)
+            {
+                rig2d.AddForce(gravity * offset.normalized / gravitysqr);
+            }
         }
     }
 }
