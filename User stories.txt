@@ -1,0 +1,162 @@
+
+
+
+
+
+
+User story: Als speler wil ik health hebben en damage kunnen oplopen/dood gaan, zodat ik uitdaging ervaar in het spel (HLTH)
+
+Todo’s:
+
+-        (HLTH) One Health 
+
+-        (HLTH) Hitbox (one hit death)
+
+-        (HLTH) Collision
+                    
+
+-        (HLTH) Damage overbrengen
+
+-        (HLTH) Jetpack rook (hoe groter, hoe groter de kans voor game over)
+
+-        (HLTH) UI: Oxygen bar
+
+-        (HLTH) UI: Oxygen bar animatie (verminderen oxygen)
+
+-        (HLTH) Hit animatie
+
+-        (HLTH) Hit effect (explosie)
+
+-        (HLTH) Death animatie
+
+-        (HLTH) Geluids effect
+
+-        (HLTH) Oxygen bar aanpassen vanuit code (animatie aanroepen)
+
+-        (HLTH) Fx triggeren uit code
+
+-        (HLTH) Hit animatie afspelen via code
+
+-        (HLTH) Death triggeren vanuit code als je uit het speelscherm bent 
+
+-        (HLTH) Geluids effect voor rook
+
+-        (HLTH) rook triggeren door code 
+
+User story: Als spelers wil ik power ups zodat ik zodat ik sterker/cooler wordt (PWR)
+
+Todo’s:
+
+-        (PWR) Power up graphic
+
+-        (PWR) Pickup class: 1 
+
+-        (PWR) Personal ability (power up)
+
+-        (PWR) Weapon upgrade animatie tijdens het oppaken van een upgrade 
+
+-        (PWR) Transitie animatie naar groter/cooler/sterker
+
+-        (PWR) Code: aanpassen stats (health/damage)
+
+-        (PWR) Extra set voor alle karakter animaties
+
+o   Sterkere idle
+
+o   Sterkere walk
+
+o   Sterker Attack
+
+-        (PWR) Geluids effect
+
+User story: Als speler wil ik kunnen lopen en springen over/op platforms/van planeet kan switchen/ zodat ik door het level kan navigeren (NAV)
+
+Todo’s:
+
+-        (NAV) Variabele: hoe hoog springen
+
+-        (NAV) Zwaartekracht (hoe lang zweven op een bepaald planeet)
+
+-        (NAV) Zorgen dat ik alleen vanaf de grond en platform kan springen
+
+o   Grounded check
+-        (NAV) Draaiende planeten 
+
+-        (NAV) Grafity switch
+
+-        (NAV) Trekkracht van de zwaartekracht code 
+
+-        (NAV) Input speler om sprong te triggeren
+
+-        (NAV) Animatie:
+
+ Character 
+o   Loop animatie
+
+o   Idle animatie
+
+o   Jump up
+
+o   Jump down
+
+o   Landing
+
+o   Prep (afzetten)
+
+o   Shoot animation 
+
+ENEMY
+
+o   Loop animatie 
+
+o   Idle animatie 
+
+o   Attack animatie 
+
+o   Death Animatie 
+
+-        (NAV) Aanroepen van de animaties
+
+o   Koppeling ground check & landing
+
+o   Koppeling input & afzet animatie/frame
+
+o   Koppeling jump richting Y-as en afspelen jump up/down
+
+-        (NAV) Zweven effect 
+
+-        (NAV) Particle effect afzetten
+
+-        (NAV) Particle effect landen
+
+-        (NAV) Geluidseffect sprong
+
+-        (NAV) Geluidseffect landing
+
+-        (NAV) Geluidseffect stapjes
+
+-        (NAV) Geluidseffect death 
+
+-        (NAV) Geluidseffect ENEMY
+
+-        (NAV)Geluidseffect Attack (character / Enemy)
+
+User story: Als speler wil ik kunnen mijn voorruitgang kunnen bijhouden tijdens het spelen en na het spelen van de game (UI)
+
+Todo’s:
+
+-        (UI) Scorebord 
+
+-        (UI) Aantal meter afgelegd 
+
+-        (UI) Highscore
+
+-        (UI) Menu van vooruitgang of highscores 
+
+o   Code om de score te laten tellen
+
+o   Code om vooruitgang op te slaan
+
+o   Code om afstand te berekenen 
+
+
