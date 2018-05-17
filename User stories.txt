@@ -43,6 +43,9 @@ Todo’s:
 
 -        (HLTH) rook triggeren door code 
 
+-        (HLTH) Character wordt in gesleurpt in zwart gat animatie 
+
+-        (HLTH) gesleurpt in zwart gat code 
 User story: Als spelers wil ik power ups zodat ik zodat ik sterker/cooler wordt (PWR)
 
 Todo’s:
