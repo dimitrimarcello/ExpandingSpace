@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SpawnScript : MonoBehaviour {
 
-    public GameObject[] obj;
-    public float spawnMin = 1f;
-    public float spawnMax = 2f;
+    public GameObject[] obj1;
+    public float spawnMin = 20;
+    public float spawnMax = 40;
 
     // Use this for initialization
     void Start () {
@@ -16,7 +16,8 @@ public class SpawnScript : MonoBehaviour {
 	void Spawn()
     {
         Vector2 spawnLocation = new Vector2(transform.position.x, transform.position.y - Random.Range(1, 8));
-        GameObject holes = Instantiate(obj[Random.Range(0, obj.GetLength(0))], spawnLocation, Quaternion.identity);
-        Invoke("Spawn", Random.Range(spawnMin, spawnMax));
+        GameObject holes = Instantiate(obj1[Random.Range(0, obj1.GetLength(0))], spawnLocation, Quaternion.identity);
+        Invoke("Spawn", Random.Range(spawnMin,spawnMax));
     }
+
 }

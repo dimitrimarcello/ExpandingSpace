@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     Rigidbody2D Player;
-    public bool canJump = false;
-    public float jumpForceSmall = 10;    
-    public float jumpForceMedium = 2;
-    public float jumpForceMax = 2.5f;
+    public bool canJump = false; 
+    public float jumpForceMedium = 3;
+    public float jumpForceMax = 6f;
+    public float playerSpeedLeft = -0.5f;
+    public float playerSpeedRight = 0.5f;
     Quaternion zeroRotation;
 
 
@@ -18,24 +19,15 @@ public class PlayerMovement : MonoBehaviour {
         Player = GetComponent<Rigidbody2D>();
     }
 
-    public void RotateRight()
-    {
-        Player.AddTorque(0.25f);
-    }
-    public void RotateLeft()
-    {
-        Player.AddTorque(-0.25f);
-    }
-    public void RotateUp()
-    {
-        Player.AddTorque(0.5f);
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionStay2D(Collision2D other)
     {
         if(other.gameObject.tag == "Planet")
         {
-            canJump = true;
+            if(canJump == false)
+            {
+                canJump = true;
+            }  
+            RandomMove("Enable");
             return;
         }
         else
@@ -46,24 +38,36 @@ public class PlayerMovement : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("space"))
+        if (Input.GetKey(KeyCode.UpArrow) && canJump == true)
         {
-            if (canJump == true)
+            Player.AddForce((1 * jumpForceMax) * transform.up, ForceMode2D.Impulse);
+            canJump = false;
+            return;
+        }
+        if (Input.GetKey(KeyCode.DownArrow) && canJump == true)
+        {
+            Player.AddForce((1 * jumpForceMedium) * transform.up, ForceMode2D.Impulse);
+            canJump = false;
+            return;
+        }
+    }
+    public void RandomMove(string a)
+    {
+        int temp = Random.Range(1, 2);
+        if(a == "Enable")
+        {
+            if(temp == 1)
             {
-                // Jump on ridigbody
-                Player.AddForce(jumpForceSmall * transform.up, ForceMode2D.Impulse);
-                canJump = false;
+                Player.velocity = -transform.right * playerSpeedLeft;
+            }
+            else if(temp == 2)
+            {
+                Player.velocity = -transform.right * playerSpeedRight;
             }
         }
-        if (Input.GetButtonDown("ArrowUp") && canJump == true)
+        else
         {
-            Player.AddForce((jumpForceSmall * jumpForceMax) * transform.up, ForceMode2D.Impulse);
-            canJump = false;
-        }
-        if (Input.GetButtonDown("ArrowDown") && canJump == true)
-        {
-            Player.AddForce((jumpForceSmall * jumpForceMedium) * transform.up, ForceMode2D.Impulse);
-            canJump = false;
+            return;
         }
     }
 }

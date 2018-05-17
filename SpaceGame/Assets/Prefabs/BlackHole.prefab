@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212297927839675768}
   - component: {fileID: 58588919476387176}
   - component: {fileID: 50634632144693644}
-  - component: {fileID: 114202754009885480}
   - component: {fileID: 114422515116142694}
+  - component: {fileID: 114004854889124158}
   m_Layer: 0
   m_Name: BlackHole
   m_TagString: BlackHole
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1995531935093100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5890379, y: 2.0271244, z: 0}
+  m_LocalPosition: {x: 14.429104, y: -0.42059088, z: 0}
   m_LocalScale: {x: 0.9614368, y: 0.9614368, z: 0.9614368}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ CircleCollider2D:
   m_Offset: {x: -0.015519429, y: 0.029999994}
   serializedVersion: 2
   m_Radius: 0.0001
---- !u!114 &114202754009885480
+--- !u!114 &114004854889124158
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c970d324396d74c9dd3eeb6ef755d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackHoleSpeed: 5
+  blackHoleSpeed: 4
 --- !u!114 &114422515116142694
 MonoBehaviour:
   m_ObjectHideFlags: 1
