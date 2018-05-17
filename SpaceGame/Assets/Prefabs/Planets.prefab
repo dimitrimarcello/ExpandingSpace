@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4816869905938710}
   - component: {fileID: 212283990136537482}
-  - component: {fileID: 50084066007500892}
-  - component: {fileID: 60578089509096512}
+  - component: {fileID: 60556844191303310}
+  - component: {fileID: 50583842374157544}
   m_Layer: 0
   m_Name: Planets
   m_TagString: Planet
@@ -36,13 +36,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1625644278054144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.277, y: -2.697, z: 0}
+  m_LocalPosition: {x: -1.2953172, y: 0.3670588, z: 0}
   m_LocalScale: {x: 0.50403285, y: 0.50403285, z: 0.50403285}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50084066007500892
+--- !u!50 &50583842374157544
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!60 &60578089509096512
+--- !u!60 &60556844191303310
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -197,7 +197,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b84718d6129d8574e8f1c7762414a6ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

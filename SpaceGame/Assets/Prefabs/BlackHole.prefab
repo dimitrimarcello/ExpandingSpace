@@ -20,8 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4912815578722122}
   - component: {fileID: 212297927839675768}
-  - component: {fileID: 50651192596867616}
-  - component: {fileID: 58083859321804226}
+  - component: {fileID: 58588919476387176}
+  - component: {fileID: 50634632144693644}
+  - component: {fileID: 114202754009885480}
+  - component: {fileID: 114422515116142694}
   m_Layer: 0
   m_Name: BlackHole
   m_TagString: BlackHole
@@ -36,13 +38,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1995531935093100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 2.97, z: 0}
+  m_LocalPosition: {x: 0.5890379, y: 2.0271244, z: 0}
   m_LocalScale: {x: 0.9614368, y: 0.9614368, z: 0.9614368}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50651192596867616
+--- !u!50 &50634632144693644
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -61,8 +63,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!58 &58083859321804226
+  m_Constraints: 6
+--- !u!58 &58588919476387176
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -71,12 +73,35 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0013023991, y: 0.014668604}
+  m_Offset: {x: -0.015519429, y: 0.029999994}
   serializedVersion: 2
-  m_Radius: 0.008542468
+  m_Radius: 0.0001
+--- !u!114 &114202754009885480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995531935093100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60c970d324396d74c9dd3eeb6ef755d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackHoleSpeed: 5
+--- !u!114 &114422515116142694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995531935093100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c8f973d1be3f74da4213dd4a0d4af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212297927839675768
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -110,7 +135,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c90b9e435b6276d4e8a67a11aae977ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
