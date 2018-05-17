@@ -18,6 +18,19 @@ public class PlayerMovement : MonoBehaviour {
         Player = GetComponent<Rigidbody2D>();
     }
 
+    public void RotateRight()
+    {
+        Player.AddTorque(0.25f);
+    }
+    public void RotateLeft()
+    {
+        Player.AddTorque(-0.25f);
+    }
+    public void RotateUp()
+    {
+        Player.AddTorque(0.5f);
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Planet")

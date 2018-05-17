@@ -8,6 +8,7 @@ public class Gravity : MonoBehaviour {
     public GameObject[] planet;
     public GameObject[] blackHole;
     public float gravity = 30f;
+    private bool grounded = true;
 
     private Rigidbody2D rig2d;
 
@@ -15,6 +16,7 @@ public class Gravity : MonoBehaviour {
 	void Start () {
         //gets the objects
         rig2d = GetComponent<Rigidbody2D>();
+        rig2d.collisionDetectionMode = 0;
     }
 	
 	// Update is called once per frame
@@ -22,15 +24,23 @@ public class Gravity : MonoBehaviour {
         planet = GameObject.FindGameObjectsWithTag("Planet");
         blackHole = GameObject.FindGameObjectsWithTag("BlackHole");
         //this is used for the planet gravity pull
+
         for (int i = 0; i < planet.Length; i++)
         {
             Vector2 offset = planet[i].transform.position - transform.position;
-
+            
             float gravitysqr = offset.sqrMagnitude;
-
-            if (gravitysqr > 0.001f && gravitysqr < 7)
+            if (gravitysqr <= 5)
             {
-                rig2d.AddForce(gravity * offset.normalized / gravitysqr);
+                grounded = true;
+                transform.up = -offset;
+                if (gravitysqr > 0.001f && gravitysqr < 5)
+                {
+                    rig2d.AddForce(gravity * offset.normalized / gravitysqr);
+                }
+                else{
+                    grounded = false;
+                }
             }
         }
         //this is used for the blackhole pull and range
@@ -40,7 +50,7 @@ public class Gravity : MonoBehaviour {
 
             float gravitysqr = offset.sqrMagnitude;
             float gravity2 = 70;
-            if (gravitysqr > 3f && gravitysqr < 30)
+            if (gravitysqr > 0.001f && gravitysqr < 100 && grounded == false)
             {
                 rig2d.AddForce(gravity2 * offset.normalized / gravitysqr);
             }
