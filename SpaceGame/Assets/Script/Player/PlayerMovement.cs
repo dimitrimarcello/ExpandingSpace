@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour {
             RandomMove("Enable");
             return;
         }
+        if(other.gameObject.tag == "BlackHole" && canJump == false)
+        {
+            Debug.Break();
+            return;
+        }
         else
         {
             return;
@@ -64,6 +69,9 @@ public class PlayerMovement : MonoBehaviour {
             {
                 Player.velocity = -transform.right * playerSpeedRight;
             }
+        }if(a == "Disable")
+        {
+            Player.velocity = -transform.right * 0;
         }
         else
         {

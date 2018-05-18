@@ -8,7 +8,7 @@ public class Gravity : MonoBehaviour {
     public GameObject[] planet;
     public GameObject[] blackHole;
     public float gravity = 30f;
-    private bool grounded = false;
+    public bool grounded = true;
 
     private Rigidbody2D rig2d;
 
@@ -33,10 +33,12 @@ public class Gravity : MonoBehaviour {
                 
                 if (gravitysqr > 0.001f && gravitysqr < 5)
                 {
+                    grounded = true;
                     transform.up = -offset;
                     rig2d.AddForce(gravity * offset.normalized / gravitysqr);
-                    grounded = true;
-                }else if(gravitysqr > 5){
+                    return;
+                }
+                else if(gravitysqr > 5){
                     grounded = false;
                 }
             
@@ -49,7 +51,6 @@ public class Gravity : MonoBehaviour {
             Vector2 offset2 = blackHole[i].transform.position - transform.position;
 
             float gravitysqr2 = offset2.sqrMagnitude;
-            Debug.Log(grounded);
             if (gravitysqr2 > 0.001f && gravitysqr2 < 100 && grounded == false)
             { 
                 rig2d.AddForce(gravity2 * offset2.normalized / gravitysqr2);

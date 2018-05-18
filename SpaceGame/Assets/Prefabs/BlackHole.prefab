@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212297927839675768}
   - component: {fileID: 58588919476387176}
   - component: {fileID: 50634632144693644}
-  - component: {fileID: 114422515116142694}
   - component: {fileID: 114004854889124158}
   m_Layer: 0
   m_Name: BlackHole
@@ -38,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1995531935093100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.429104, y: -0.42059088, z: 0}
+  m_LocalPosition: {x: -4.2477326, y: 2.7139442, z: 0}
   m_LocalScale: {x: 0.9614368, y: 0.9614368, z: 0.9614368}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,17 +90,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackHoleSpeed: 4
---- !u!114 &114422515116142694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1995531935093100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40c8f973d1be3f74da4213dd4a0d4af2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212297927839675768
 SpriteRenderer:
   m_ObjectHideFlags: 1
