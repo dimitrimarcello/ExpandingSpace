@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23142391886737644}
   - component: {fileID: 114127818794299954}
   - component: {fileID: 61678624543761766}
-  - component: {fileID: 114356397116699796}
   m_Layer: 0
   m_Name: Top_Down destroyer
   m_TagString: Destroyer
@@ -123,14 +122,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj:
   - {fileID: 1625644278054144, guid: 4dc86771e6d43be4192b1c7cdb6d7e88, type: 2}
---- !u!114 &114356397116699796
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1690421586102126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
