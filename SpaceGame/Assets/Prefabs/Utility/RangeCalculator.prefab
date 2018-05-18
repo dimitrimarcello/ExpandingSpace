@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scorePlayer: 0
+  highScore: 0
   startDistance: {fileID: 4842838771368630}
   player: {fileID: 0}
   scoreLabel: {fileID: 0}

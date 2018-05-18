@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour {
     public bool canJump = false; 
     public float jumpForceMedium = 3;
     public float jumpForceMax = 6f;
-    public float playerSpeedLeft = -0.5f;
-    public float playerSpeedRight = 0.5f;
+    public float playerSpeedLeft = -4f;
+    public float playerSpeedRight = 4f;
+    int temp = 1;
     Quaternion zeroRotation;
 
 
@@ -18,7 +19,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         Player = GetComponent<Rigidbody2D>();
     }
-
+  
     private void OnCollisionStay2D(Collision2D other)
     {
         if(other.gameObject.tag == "Planet")
@@ -26,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
             if(canJump == false)
             {
                 canJump = true;
-            }  
+            }
             RandomMove("Enable");
             return;
         }
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.UpArrow) && canJump == true)
         {
+            
             Player.AddForce((1 * jumpForceMax) * transform.up, ForceMode2D.Impulse);
             canJump = false;
             return;
@@ -49,11 +51,11 @@ public class PlayerMovement : MonoBehaviour {
             Player.AddForce((1 * jumpForceMedium) * transform.up, ForceMode2D.Impulse);
             canJump = false;
             return;
-        }
+        } 
+        
     }
     public void RandomMove(string a)
     {
-        int temp = Random.Range(1, 2);
         if(a == "Enable")
         {
             if(temp == 1)
@@ -70,5 +72,6 @@ public class PlayerMovement : MonoBehaviour {
             return;
         }
     }
+
 }
 

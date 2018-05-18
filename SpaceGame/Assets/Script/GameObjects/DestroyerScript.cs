@@ -18,7 +18,7 @@ public class DestroyerScript : MonoBehaviour {
         if(other.tag == "Player")
         {
             //Hier kan de gameover zijn
-            Debug.Break();
+            SceneManager.LoadScene(1);
             return;
         }
         else if (other.tag == "Destroyer")
@@ -44,7 +44,7 @@ public class DestroyerScript : MonoBehaviour {
     }
     public void BuildMap()
     {
-        Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(23, 24), 4 - Random.Range(1, 8));
+        Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(24, 27), 4 - Random.Range(1, 8));
         GameObject holes = Instantiate(obj[Random.Range(0, obj.GetLength(0))], spawnLocation, Quaternion.identity);
     }
 
