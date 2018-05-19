@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnScript : MonoBehaviour {
 
@@ -9,10 +10,12 @@ public class SpawnScript : MonoBehaviour {
     public float spawnMin = 20;
     public float spawnMax = 40;
     private float playerRange;
+    public GameObject warning;
     bool doIt = true;
     // Use this for initialization
     void Start () {
-        playerRange = _player.position.x + 30;
+        warning.SetActive(false);
+        playerRange = _player.position.x + 40;
 	}
     private void Update()
     {
@@ -22,6 +25,7 @@ public class SpawnScript : MonoBehaviour {
         }
     }
     void Spawn() {
+        warning.SetActive(true);
         Vector2 spawnLocation = new Vector2(transform.position.x, transform.position.y - Random.Range(1, 8));
         GameObject holes = Instantiate(obj1[Random.Range(0, obj1.GetLength(0))], spawnLocation, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
