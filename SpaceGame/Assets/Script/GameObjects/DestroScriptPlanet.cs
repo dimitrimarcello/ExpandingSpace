@@ -14,7 +14,7 @@ public class DestroScriptPlanet : MonoBehaviour
         if (other.tag == "Player")
         {
             //Hier kan de gameover zijn
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
             return;
         }
         else if (other.tag == "Destroyer")

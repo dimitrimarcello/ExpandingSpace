@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Planet physichs.unity
+    path: Assets/Scenes/Controlls.unity
+    guid: ac95963f87b7284459223053e707f259
+  - enabled: 1
+    path: Assets/Scenes/MainGame.unity
     guid: 21217201b81162d4487fd914115f9f8c
   - enabled: 1
     path: Assets/Scenes/gameOver.unity

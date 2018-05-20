@@ -15,7 +15,7 @@ public class LockDown : MonoBehaviour {
     {
         if(player.position.x <= -10)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
             return;
         }
     }

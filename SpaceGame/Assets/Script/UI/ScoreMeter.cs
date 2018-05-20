@@ -19,8 +19,11 @@ public class ScoreMeter : MonoBehaviour {
     private void Update()
     {
         scorePlayer = Vector3.Distance(player.position, startDistance.position);
+        scorePlayer = Mathf.Round(scorePlayer * 100f);
+
         scoreLabel.text = "Miles Travelled: " + scorePlayer;
         highScoreLabel.text = " HighScore: " + highScore;
+
         if(scorePlayer > highScore)
         {
             highScore = scorePlayer;

@@ -18,7 +18,7 @@ public class DestroyerScript : MonoBehaviour {
         
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
             return;
         }
         else if (other.tag == "Destroyer")
