@@ -17,7 +17,7 @@ public class start : MonoBehaviour
 
     private void TaskOnClick()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Controlls");
     }
 
 }

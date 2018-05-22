@@ -9,7 +9,7 @@ public class PlanetObstakel : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("gameOver");
             return;
         }
         else if(collision.gameObject.tag == "Planet")
