@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour {
             canJump = false;
             return;
         } 
-        if(Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.DownArrow) && canJump == false)
+        if(Input.GetKey(KeyCode.Space))
         {
             Player.AddForce((1 * jetPackJump) * transform.up, ForceMode2D.Impulse);
             return;

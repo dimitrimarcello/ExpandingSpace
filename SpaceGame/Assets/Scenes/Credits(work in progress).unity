@@ -248,9 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9923a77b646ec054a9c7bc0060d15358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move2: {fileID: 0}
-  credits: {fileID: 0}
-  speed: 4
 --- !u!1 &1053696191
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +551,7 @@ Prefab:
     - target: {fileID: 224681349806742040, guid: 9740c1a3eb8eaee4cba818ae3b2fb24e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1125.4
+      value: -1157.3
       objectReference: {fileID: 0}
     - target: {fileID: 224681349806742040, guid: 9740c1a3eb8eaee4cba818ae3b2fb24e,
         type: 2}
@@ -564,7 +561,7 @@ Prefab:
     - target: {fileID: 224681349806742040, guid: 9740c1a3eb8eaee4cba818ae3b2fb24e,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 3040.9
+      value: 3104.7
       objectReference: {fileID: 0}
     - target: {fileID: 224681349806742040, guid: 9740c1a3eb8eaee4cba818ae3b2fb24e,
         type: 2}
