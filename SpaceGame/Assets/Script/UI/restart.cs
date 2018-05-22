@@ -17,5 +17,12 @@ public class restart : MonoBehaviour {
     {
         SceneManager.LoadScene(1);
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 
 }

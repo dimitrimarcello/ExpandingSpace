@@ -14,17 +14,15 @@ public class DestroScriptPlanet : MonoBehaviour
         if (other.tag == "Player")
         {
             //Hier kan de gameover zijn
-            Debug.Break();
+            SceneManager.LoadScene(2);
             return;
         }
         else if (other.tag == "Destroyer")
         {
-            Debug.Log(" ");
             return;
         }
         else if (other.tag == "Planet")
         {
-            Debug.Log(" ");
             return;
         }
         if (other.gameObject.transform.parent)
