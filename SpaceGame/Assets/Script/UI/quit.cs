@@ -4,18 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class restart : MonoBehaviour {
+public class quit : MonoBehaviour
+{
 
     public Button btn;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         btn.onClick.AddListener(TaskOnClick);
     }
-	
+
     private void TaskOnClick()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
 }
