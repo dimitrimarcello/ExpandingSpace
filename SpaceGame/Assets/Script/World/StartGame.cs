@@ -9,7 +9,7 @@ public class StartGame : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("MainGame");
             return;
         }
     }

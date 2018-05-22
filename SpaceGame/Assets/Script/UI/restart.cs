@@ -15,13 +15,13 @@ public class restart : MonoBehaviour {
 	
     private void TaskOnClick()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MainGame");
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("MainGame");
         }
     }
 
