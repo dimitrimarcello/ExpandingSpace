@@ -16,17 +16,17 @@ public class LockDown : MonoBehaviour {
     {
         if(player.position.x <= -10)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("gameOver");
             return;
         }
         if(player.position.y > 7)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("gameOver");
             return;
         }
         if(player.position.y < -7)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("gameOver");
             return;
         }
     }

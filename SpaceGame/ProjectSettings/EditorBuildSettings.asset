@@ -4,10 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 564134d5ac065878f6203e68a6c1aaf8767a939c
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/mainMenu.unity
@@ -22,14 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/gameOver.unity
     guid: d9e318e32a4ca4c4d8cc8c37904e7fa5
   - enabled: 1
-    path: Assets/Scenes/Credits(work in progress).unity
-    guid: 8278f05306afd4341a13c06be0b45e64
-<<<<<<< HEAD
-  - enabled: 1
     path: Assets/Scenes/Achievements.unity
     guid: aaba9abc8eb69c44a9164d7b1347bbd6
-=======
-=======
-  m_Scenes: []
->>>>>>> cd27ea955f6ed399d300e49b59b05217bf87d3fd
->>>>>>> 564134d5ac065878f6203e68a6c1aaf8767a939c
+  - enabled: 1
+    path: Assets/Scenes/Credits(work in progress).unity
+    guid: 8278f05306afd4341a13c06be0b45e64
