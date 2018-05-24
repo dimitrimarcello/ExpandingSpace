@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class credits : MonoBehaviour
+public class achievementbutton : MonoBehaviour
 {
 
     public Button btn;
@@ -17,7 +17,7 @@ public class credits : MonoBehaviour
 
     private void TaskOnClick()
     {
-        SceneManager.LoadScene("Credits(work in progress)");
+        SceneManager.LoadScene("Achievements");
     }
 
 }
