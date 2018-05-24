@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Achievements : MonoBehaviour {
+public class achievements : MonoBehaviour {
 
     public Text[] tiers;
     private float highScore;
