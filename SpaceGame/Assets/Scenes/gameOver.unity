@@ -210,6 +210,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114405473332838458, guid: 33e2ece38fb87b5499bd46e55a666af9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33e2ece38fb87b5499bd46e55a666af9, type: 2}
   m_IsPrefabParent: 0
@@ -330,6 +335,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114867751139495702, guid: 1502488f6cce0cf40894515861d9905e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1502488f6cce0cf40894515861d9905e, type: 2}
   m_IsPrefabParent: 0
@@ -433,6 +443,11 @@ Prefab:
     - target: {fileID: 1327103544956572, guid: 6ca83d98770917a47a0a09991e894a91, type: 2}
       propertyPath: m_Name
       value: Tip-Use Enter
+      objectReference: {fileID: 0}
+    - target: {fileID: 114721554866752140, guid: 6ca83d98770917a47a0a09991e894a91,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ca83d98770917a47a0a09991e894a91, type: 2}
@@ -831,6 +846,11 @@ Prefab:
       propertyPath: m_Name
       value: Tip-Combine Jumps
       objectReference: {fileID: 0}
+    - target: {fileID: 114576675549838954, guid: 503082da21f3a4a47acc159ef165204d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 503082da21f3a4a47acc159ef165204d, type: 2}
   m_IsPrefabParent: 0
@@ -1187,6 +1207,11 @@ Prefab:
     - target: {fileID: 1036671462158146, guid: 4176037504ed0824e843f9a4d9267d00, type: 2}
       propertyPath: m_Name
       value: Tip-You died
+      objectReference: {fileID: 0}
+    - target: {fileID: 114916246898601912, guid: 4176037504ed0824e843f9a4d9267d00,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4176037504ed0824e843f9a4d9267d00, type: 2}
@@ -1574,6 +1599,11 @@ Prefab:
     - target: {fileID: 1312860178493842, guid: 09f82fd7fdbf4e044a36eca570301e68, type: 2}
       propertyPath: m_Name
       value: Tip-Erwin is terible
+      objectReference: {fileID: 0}
+    - target: {fileID: 114527300634054646, guid: 09f82fd7fdbf4e044a36eca570301e68,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09f82fd7fdbf4e044a36eca570301e68, type: 2}
@@ -2050,6 +2080,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114650382537950520, guid: 1f2c30aeaf473d84194a30cfca5969a5,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f2c30aeaf473d84194a30cfca5969a5, type: 2}
@@ -2647,6 +2682,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114855532468821146, guid: 412531e2d836b8e4d8a54c2081ad4ac9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 412531e2d836b8e4d8a54c2081ad4ac9, type: 2}
