@@ -1031,6 +1031,7 @@ GameObject:
   - component: {fileID: 1844431153}
   - component: {fileID: 1844431152}
   - component: {fileID: 1844431155}
+  - component: {fileID: 1844431156}
   m_Layer: 5
   m_Name: achievements
   m_TagString: Untagged
@@ -1140,6 +1141,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 770c574c1bc39ca4ba6ebaf90c4606cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1844431156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1844431150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860b0520b9b875f41b8b984d7c7d302a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1844431152}
