@@ -7,6 +7,7 @@ public class DestroyerScript : MonoBehaviour {
 
     //SceneController controller;
     public GameObject[] obj;
+    public GameObject imageWarning;
     private void Start()
     {
         
@@ -17,13 +18,11 @@ public class DestroyerScript : MonoBehaviour {
         
         if(other.tag == "Player")
         {
-            //Hier kan de gameover zijn
-            Debug.Break();
+            SceneManager.LoadScene("gameOver");
             return;
         }
         else if (other.tag == "Destroyer")
         {
-            Debug.Log(" ");
             return;
         }
         else if(other.tag == "Planet")
@@ -32,6 +31,12 @@ public class DestroyerScript : MonoBehaviour {
             BuildMap();
             return;
 
+        }
+        else if(other.tag == "BlackHole")
+        {
+            imageWarning.SetActive(false);
+            Destroy(other.gameObject);
+            return;
         }
         if (other.gameObject.transform.parent)
         {
@@ -44,7 +49,7 @@ public class DestroyerScript : MonoBehaviour {
     }
     public void BuildMap()
     {
-        Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(23, 24), 4 - Random.Range(1, 8));
+        Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(24, 25), 4 - Random.Range(1, 8));
         GameObject holes = Instantiate(obj[Random.Range(0, obj.GetLength(0))], spawnLocation, Quaternion.identity);
     }
 
