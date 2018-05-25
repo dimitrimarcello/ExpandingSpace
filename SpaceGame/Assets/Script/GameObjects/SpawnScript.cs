@@ -26,7 +26,7 @@ public class SpawnScript : MonoBehaviour {
     }
     void Spawn() {
         warning.SetActive(true);
-        Vector2 spawnLocation = new Vector2(transform.position.x, transform.position.y - Random.Range(1, 8));
+        Vector2 spawnLocation = new Vector3(transform.position.x, transform.position.y - Random.Range(1, 8), -4f);
         GameObject holes = Instantiate(obj1[Random.Range(0, obj1.GetLength(0))], spawnLocation, Quaternion.identity);
         Invoke("Spawn", Random.Range(spawnMin, spawnMax));
         doIt = false;

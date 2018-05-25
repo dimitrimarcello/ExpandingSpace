@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Planet
   - BlackHole
+  - Destroyer
+  - Oxygen
+  - Oxygen Special
   layers:
   - Default
   - TransparentFX
