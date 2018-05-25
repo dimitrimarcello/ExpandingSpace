@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:SpaceGame/Assets/Art/Unity blackhole assets.meta
 guid: bced1b50a8bd01e4e86c76f8d094d5b5
 folderAsset: yes
 timeCreated: 1527236086
+=======
+guid: 57b7136ee3d7c264394fa8e433396d0c
+folderAsset: yes
+timeCreated: 1527236038
+>>>>>>> 7c80024ead810f95e897c7278e1a9581360b7841:SpaceGame/Assets/Art/Unity blackhole assets.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
