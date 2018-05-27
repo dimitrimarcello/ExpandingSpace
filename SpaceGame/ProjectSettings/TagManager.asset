@@ -9,6 +9,7 @@ TagManager:
   - Destroyer
   - Oxygen
   - Oxygen Special
+  - Warning
   layers:
   - Default
   - TransparentFX

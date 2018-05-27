@@ -921,6 +921,12 @@ Prefab:
       propertyPath: warning
       value: 
       objectReference: {fileID: 1069889284}
+    - target: {fileID: 114816799462482636, guid: d7f275bc098af9e4882dbd8b908b64a2,
+        type: 2}
+      propertyPath: obj1.Array.data[0]
+      value: 
+      objectReference: {fileID: 1373439802923480, guid: a4c2b9d08a021df4fae0dbdbd11f5da4,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7f275bc098af9e4882dbd8b908b64a2, type: 2}
   m_IsPrefabParent: 0
@@ -1231,7 +1237,7 @@ GameObject:
   - component: {fileID: 1069889286}
   m_Layer: 5
   m_Name: warning
-  m_TagString: Untagged
+  m_TagString: Warning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1463,6 +1469,16 @@ Prefab:
     - target: {fileID: 4659934512534100, guid: 5153da7c11648934485ea1dddd5ce24f, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 50076697708521202, guid: 5153da7c11648934485ea1dddd5ce24f,
+        type: 2}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50076697708521202, guid: 5153da7c11648934485ea1dddd5ce24f,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5153da7c11648934485ea1dddd5ce24f, type: 2}

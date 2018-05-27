@@ -54,6 +54,7 @@ public class Gravity : MonoBehaviour {
                 rig2d.AddForce(gravity2 * offset2.normalized / gravitysqr2);
             }
         }
+        
     }
 
 }
