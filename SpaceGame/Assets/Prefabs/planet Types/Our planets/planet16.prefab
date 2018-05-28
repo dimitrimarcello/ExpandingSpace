@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212751286505514114}
   - component: {fileID: 50729122316610182}
   - component: {fileID: 58300725506365346}
+  - component: {fileID: 114289765434931408}
   m_Layer: 0
   m_Name: planet16
   m_TagString: Planet
@@ -77,6 +78,19 @@ CircleCollider2D:
   m_Offset: {x: 0.01011312, y: 0.034131527}
   serializedVersion: 2
   m_Radius: 1.2591839
+--- !u!114 &114289765434931408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1104984471510280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab6e1789e74fec4db967b378f177814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatures:
+  - {fileID: 1371125092655336, guid: c4e4d235d5f99a7489b39d371256fe15, type: 2}
 --- !u!212 &212751286505514114
 SpriteRenderer:
   m_ObjectHideFlags: 1

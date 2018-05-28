@@ -15,7 +15,7 @@ public class BlackHoleSave : MonoBehaviour {
     }
     private void Update()
     {
-        float destroy = _plyr.position.x - 10;
+        float destroy = _plyr.position.x - 5;
         if(blackHole.position.x < destroy)
         {
             Destroy(this.gameObject);
