@@ -7,6 +7,7 @@ public class BlackHoleSave : MonoBehaviour {
     public Transform _plyr;
     private Transform blackHole;
     private GameObject[] warning;
+    private float destroy;
 
     private void Awake()
     {
@@ -15,7 +16,7 @@ public class BlackHoleSave : MonoBehaviour {
     }
     private void Update()
     {
-        float destroy = _plyr.position.x - 5;
+        destroy = _plyr.position.x - 5;
         if(blackHole.position.x < destroy)
         {
             Destroy(this.gameObject);
