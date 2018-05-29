@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212073423435219266}
   - component: {fileID: 50631821231073646}
   - component: {fileID: 58170124468270778}
+  - component: {fileID: 114828305893402308}
   m_Layer: 0
   m_Name: planet48
   m_TagString: Planet
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368469813530678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2657347, y: -3.2487068, z: 0}
+  m_LocalPosition: {x: -2.9676037, y: 8.683222, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,6 +78,19 @@ CircleCollider2D:
   m_Offset: {x: 0.026419997, y: 0.017369509}
   serializedVersion: 2
   m_Radius: 1.2886121
+--- !u!114 &114828305893402308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368469813530678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab6e1789e74fec4db967b378f177814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatures:
+  - {fileID: 1371125092655336, guid: c4e4d235d5f99a7489b39d371256fe15, type: 2}
 --- !u!212 &212073423435219266
 SpriteRenderer:
   m_ObjectHideFlags: 1

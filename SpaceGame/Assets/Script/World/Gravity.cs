@@ -32,9 +32,9 @@ public class Gravity : MonoBehaviour {
                 
                 if (gravitysqr > 0.001f && gravitysqr < 9)
                 {
-                    transform.up = -offset;
-                    rig2d.AddForce(gravity * offset.normalized / gravitysqr);
-                    grounded = true;
+                transform.up =- offset;
+                rig2d.AddForce(gravity * offset.normalized / gravitysqr);
+                grounded = true;
                 }else if(gravitysqr > 9)
                 {
                     grounded = false;
@@ -54,6 +54,7 @@ public class Gravity : MonoBehaviour {
                 rig2d.AddForce(gravity2 * offset2.normalized / gravitysqr2);
             }
         }
+        
     }
 
 }

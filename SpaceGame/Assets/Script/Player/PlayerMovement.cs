@@ -41,22 +41,31 @@ public class PlayerMovement : MonoBehaviour {
     void Update()
     {
         
-        if (Input.GetKey(KeyCode.UpArrow) && canJump == true)
-        {
+        //if (Input.GetKey(KeyCode.UpArrow) && canJump == true)
+        //{
             
-            Player.AddForce((1 * jumpForceMax) * transform.up, ForceMode2D.Impulse);
-            canJump = false;
-            return;
-        }
-        if (Input.GetKey(KeyCode.DownArrow) && canJump == true)
-        {
-            Player.AddForce((1 * jumpForceMedium) * transform.up, ForceMode2D.Impulse);
-            canJump = false;
-            return;
-        } 
+        //    Player.AddForce((1 * jumpForceMax) * transform.up, ForceMode2D.Impulse);
+        //    canJump = false;
+        //    return;
+        //}
+        //if (Input.GetKey(KeyCode.DownArrow) && canJump == true)
+        //{
+        //    Player.AddForce((1 * jumpForceMedium) * transform.up, ForceMode2D.Impulse);
+        //    canJump = false;
+        //    return;
+        //} 
         if(Input.GetKey(KeyCode.Space))
         {
-            Player.AddForce((1 * jetPackJump) * transform.up, ForceMode2D.Impulse);
+
+            if (canJump == true)
+            {
+                Player.AddForce((20 * jetPackJump) * transform.up, ForceMode2D.Impulse);
+                canJump = false;
+            }
+            else
+            {
+                Player.AddForce((1 * jetPackJump) * transform.up, ForceMode2D.Impulse);
+            }
             return;
         }
 
