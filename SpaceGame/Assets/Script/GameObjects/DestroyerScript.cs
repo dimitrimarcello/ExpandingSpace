@@ -8,6 +8,7 @@ public class DestroyerScript : MonoBehaviour {
     //SceneController controller;
     public GameObject[] obj;
     public GameObject imageWarning;
+    private bool corect;
     private void Start()
     {
         
@@ -28,6 +29,7 @@ public class DestroyerScript : MonoBehaviour {
         else if(other.tag == "Planet")
         {
             Destroy(other.gameObject);
+            corect = true;
             BuildMap();
             return;
 
@@ -49,8 +51,18 @@ public class DestroyerScript : MonoBehaviour {
     }
     public void BuildMap()
     {
-        Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(24, 25), 4 - Random.Range(1, 8));
-        GameObject holes = Instantiate(obj[Random.Range(0, obj.GetLength(0))], spawnLocation, Quaternion.identity);
+        if(corect == true)
+        {
+            Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(24, 25), 4 - Random.Range(1, 8));
+            GameObject holes = Instantiate(obj[Random.Range(0, obj.GetLength(0))], spawnLocation, Quaternion.identity);
+            corect = false;
+            return;
+        }
+        else
+        {
+            return;
+        }
+        
     }
 
 }
