@@ -122,6 +122,8 @@ MonoBehaviour:
   planet: []
   blackHole: []
   gravity: 30
+  speed: 1
+  snapDistance: 0.7
 --- !u!114 &114846826347055950
 MonoBehaviour:
   m_ObjectHideFlags: 1

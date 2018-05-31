@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creatures:
   - {fileID: 1371125092655336, guid: c4e4d235d5f99a7489b39d371256fe15, type: 2}
+  - {fileID: 1076256335761178, guid: 1fd1587dc8a3c474a8114c4f54e0ce03, type: 2}
 --- !u!212 &212136659422040270
 SpriteRenderer:
   m_ObjectHideFlags: 1
