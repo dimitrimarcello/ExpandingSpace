@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     Rigidbody2D Player;
+    Animator animations;
     public bool canJump = false;
     public float jetPackJump = 0.2f;
     public float jumpForceMedium = 3;
@@ -14,11 +15,14 @@ public class PlayerMovement : MonoBehaviour {
     int temp = 1;
     Quaternion zeroRotation;
 
+    private Gravity gravity;
 
 
     private void Awake()
     {
         Player = GetComponent<Rigidbody2D>();
+        gravity = GetComponent<Gravity>();
+        animations = GetComponent<Animator>();
     }
   
     private void OnCollisionStay2D(Collision2D other)
@@ -40,23 +44,9 @@ public class PlayerMovement : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        
-        //if (Input.GetKey(KeyCode.UpArrow) && canJump == true)
-        //{
-            
-        //    Player.AddForce((1 * jumpForceMax) * transform.up, ForceMode2D.Impulse);
-        //    canJump = false;
-        //    return;
-        //}
-        //if (Input.GetKey(KeyCode.DownArrow) && canJump == true)
-        //{
-        //    Player.AddForce((1 * jumpForceMedium) * transform.up, ForceMode2D.Impulse);
-        //    canJump = false;
-        //    return;
-        //} 
         if(Input.GetKey(KeyCode.Space))
         {
-
+            animations.Play("Jump");
             if (canJump == true)
             {
                 Player.AddForce((17.5f * jetPackJump) * transform.up, ForceMode2D.Impulse);
