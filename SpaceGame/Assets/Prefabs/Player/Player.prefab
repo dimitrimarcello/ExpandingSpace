@@ -25,7 +25,8 @@ GameObject:
   - component: {fileID: 114673313290168078}
   - component: {fileID: 61591385873326526}
   - component: {fileID: 114829337831706894}
-  - component: {fileID: 114155451335151078}
+  - component: {fileID: 95960325579993600}
+  - component: {fileID: 114143197473000248}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -40,8 +41,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614242722813312}
   m_LocalRotation: {x: -0, y: -0, z: 0.006157705, w: -0.9999811}
-  m_LocalPosition: {x: -4.83, y: 0.62, z: 0}
-  m_LocalScale: {x: 0.073565885, y: 0.07356588, z: 0.07356587}
+  m_LocalPosition: {x: -2.58, y: -1.37, z: 0}
+  m_LocalScale: {x: 0.021392383, y: 0.02139238, z: 0.021392379}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -78,20 +79,37 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12019205, y: -0.23232532}
+  m_Offset: {x: 0.30905056, y: -2.245541}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 10}
+    oldSize: {x: 19.849998, y: 33.21}
     newSize: {x: 10, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3813505, y: 8.773249}
+  m_Size: {x: 16.790369, y: 28.578827}
   m_EdgeRadius: 0
---- !u!114 &114155451335151078
+--- !u!95 &95960325579993600
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614242722813312}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57567a05514f5f94c9056e3ca4e4bf03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114143197473000248
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7c0efc76e7f0641a1027dc2c548bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oxygenDisplay: {fileID: 0}
-  timerSlide: {fileID: 0}
+  timerSlide: {fileID: 114459657070655944, guid: a75ce517f834d014a90d5caa39ce7c6d,
+    type: 2}
 --- !u!114 &114673313290168078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,6 +136,8 @@ MonoBehaviour:
   planet: []
   blackHole: []
   gravity: 50
+  speed: 1
+  snapDistance: 0.7
 --- !u!114 &114829337831706894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,7 +200,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ffed6a0288612564aba8dad5aba128dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef73f991cef3607428f136ed5d665799, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
