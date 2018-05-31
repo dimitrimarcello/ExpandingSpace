@@ -10,7 +10,8 @@ public class Oxygen : MonoBehaviour {
     private float roundUp;
     //public Text oxygenDisplay;
     public Slider timerSlide;
-
+    public Animator oxygen;
+    public Animator oxygenSpecial;
 
     private void Update()
     {
@@ -18,7 +19,7 @@ public class Oxygen : MonoBehaviour {
         roundUp = Mathf.Round(oxygenTime);
         //oxygenDisplay.text = "Oxygen Left:" + roundUp;
         oxygenTime -= Time.deltaTime;
-        Debug.Log(oxygenTime);
+       
         if(oxygenTime <= 0)
         {
             SceneManager.LoadScene("gameOver");
@@ -29,28 +30,32 @@ public class Oxygen : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Oxygen")
         {
+            oxygen = collision.gameObject.GetComponent<Animator>();
+            oxygen.Play("Oxygen");
             if(oxygenTime <= 30)
             {
-                Destroy(collision.gameObject);
+                Destroy(collision.gameObject, 0.3f);
                 oxygenTime = 30;
                 return;
             }
             if(oxygenTime > 30 && oxygenTime < 40)
             {
-                Destroy(collision.gameObject);
+                Destroy(collision.gameObject, 0.3f);
                 oxygenTime = 40;
                 return;
             }
             if(oxygenTime > 40 && oxygenTime < 50)
             {
                 oxygenTime = 50;
-                Destroy(collision.gameObject);
+                Destroy(collision.gameObject, 0.3f);
                 return;
             }
         }
         if(collision.gameObject.tag == "Oxygen Special")
         {
-            Destroy(collision.gameObject);
+            oxygenSpecial = collision.gameObject.GetComponent<Animator>();
+            Destroy(collision.gameObject, 0.3f);
+            oxygenSpecial.Play("Oxygen");
             oxygenTime = 50;
             return;
         }

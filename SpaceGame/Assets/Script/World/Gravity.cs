@@ -8,9 +8,14 @@ public class Gravity : MonoBehaviour {
     public GameObject[] planet;
     public GameObject[] blackHole;
     public float gravity = 30f;
+    public float speed = 1;
+    public float snapDistance = 0.7f;
     private bool grounded = true;
+    public bool Grounded {  get { return grounded; } }
+
 
     private Rigidbody2D rig2d;
+    Transform currentAttractor;
 
 	// Use this for initialization
 	void Start () {
@@ -29,13 +34,34 @@ public class Gravity : MonoBehaviour {
             Vector2 offset = planet[i].transform.position - transform.position;
             
             float gravitysqr = offset.sqrMagnitude;
-                
-                if (gravitysqr > 0.001f && gravitysqr < 9)
+
+            if (gravitysqr > 0.001f && gravitysqr < 9)
+            {
+                if (currentAttractor == null)
                 {
-                transform.up =- offset;
-                rig2d.AddForce(gravity * offset.normalized / gravitysqr);
-                grounded = true;
-                }else if(gravitysqr > 9)
+                    currentAttractor = planet[i].transform;
+                }
+
+                if (currentAttractor != planet[i].transform)
+                {
+                    rig2d.isKinematic = true;
+                    print("Nieuwe Attractor");
+                    transform.up = Vector3.Lerp(transform.up, -offset, speed * Time.deltaTime);
+
+                    if (Vector3.Distance(transform.up, -offset) <= snapDistance)
+                    {
+                        currentAttractor = planet[i].transform;
+                        print("snap");
+                    }
+                } else {
+                    rig2d.isKinematic = false;
+                    transform.up = -offset;
+                    rig2d.AddForce(gravity * offset.normalized / gravitysqr);
+                    grounded = true;
+                }
+            }
+            
+            else if(gravitysqr > 9)
                 {
                     grounded = false;
                 }
