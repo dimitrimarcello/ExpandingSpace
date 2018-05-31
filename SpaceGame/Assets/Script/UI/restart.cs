@@ -21,7 +21,8 @@ public class restart : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("MainGame");
+            //SceneManager.LoadScene("MainGame");
+            Initiate.Fade("MainGame", Color.black, 1.0f);
         }
     }
 

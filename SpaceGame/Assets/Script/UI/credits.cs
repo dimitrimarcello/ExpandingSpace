@@ -17,7 +17,8 @@ public class credits : MonoBehaviour
 
     private void TaskOnClick()
     {
-        SceneManager.LoadScene("Credits(work in progress)");
+        //SceneManager.LoadScene("Credits(work in progress)");
+        Initiate.Fade("Credits(work in progress)", Color.black, 1.0f);
     }
 
 }

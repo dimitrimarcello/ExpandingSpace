@@ -17,7 +17,8 @@ public class quit : MonoBehaviour
 
     private void TaskOnClick()
     {
-        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene("MainMenu");
+        Initiate.Fade("MainMenu", Color.black, 1.0f);
     }
 
 }

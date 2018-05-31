@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class start : MonoBehaviour
+public class controls : MonoBehaviour
 {
 
     public Button btn;
@@ -17,8 +17,8 @@ public class start : MonoBehaviour
 
     private void TaskOnClick()
     {
-        //SceneManager.LoadScene("Controlls");
-        Initiate.Fade("MainGame", Color.black, 1.0f);
+        //SceneManager.LoadScene("controlls");
+        Initiate.Fade("Controlls", Color.black, 1.0f);
     }
 
 }
