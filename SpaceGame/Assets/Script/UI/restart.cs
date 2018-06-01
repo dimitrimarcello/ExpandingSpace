@@ -15,11 +15,17 @@ public class restart : MonoBehaviour {
 	
     private void TaskOnClick()
     {
-        SceneManager.LoadScene("MainGame");
+        //SceneManager.LoadScene("MainGame");
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //SceneManager.LoadScene("MainGame");
+            Initiate.Fade("MainGame", Color.black, 1.0f);
+        }
+
+        if (Input.GetButton("Fire1"))
         {
             //SceneManager.LoadScene("MainGame");
             Initiate.Fade("MainGame", Color.black, 1.0f);

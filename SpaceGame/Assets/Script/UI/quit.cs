@@ -21,4 +21,13 @@ public class quit : MonoBehaviour
         Initiate.Fade("MainMenu", Color.black, 1.0f);
     }
 
+    private void Update()
+    {
+        if (Input.GetButton("Fire2"))
+        {
+            //SceneManager.LoadScene("MainGame");
+            Initiate.Fade("MainMenu", Color.black, 1.0f);
+        }
+    }
+    
 }

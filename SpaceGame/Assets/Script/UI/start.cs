@@ -18,7 +18,24 @@ public class start : MonoBehaviour
     private void TaskOnClick()
     {
         //SceneManager.LoadScene("Controlls");
-        Initiate.Fade("MainGame", Color.black, 1.0f);
+
+        //Initiate.Fade("MainGame", Color.black, 1.0f);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //SceneManager.LoadScene("MainGame");
+            Initiate.Fade("MainGame", Color.black, 1.0f);
+        }
+
+        if (Input.GetButton("Fire1"))
+        {
+            //SceneManager.LoadScene("MainGame");
+            Initiate.Fade("MainGame", Color.black, 1.0f);
+        }
+    }
+
 
 }
