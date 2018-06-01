@@ -33,7 +33,7 @@ public class PauseGame : MonoBehaviour
     }
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Fire3"))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (checkPause == false)
                 {

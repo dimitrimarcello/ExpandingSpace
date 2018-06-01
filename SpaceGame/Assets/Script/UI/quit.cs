@@ -17,17 +17,17 @@ public class quit : MonoBehaviour
 
     private void TaskOnClick()
     {
-        //SceneManager.LoadScene("MainMenu");
-        Initiate.Fade("MainMenu", Color.black, 1.0f);
+        SceneManager.LoadScene("MainMenu");
+        
     }
 
-    private void Update()
-    {
-        if (Input.GetButton("Fire2"))
-        {
-            //SceneManager.LoadScene("MainGame");
-            Initiate.Fade("MainMenu", Color.black, 1.0f);
-        }
-    }
+       //private void Update()
+             //{
+            //if (Input.GetButton("Fire3"))
+           // {
+          //SceneManager.LoadScene("MainGame");
+         // 
+        //    }
+       // }
     
 }

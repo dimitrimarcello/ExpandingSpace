@@ -17,8 +17,8 @@ public class controls : MonoBehaviour
 
     private void TaskOnClick()
     {
-        //SceneManager.LoadScene("controlls");
-        Initiate.Fade("Controlls", Color.black, 1.0f);
+        SceneManager.LoadScene("controlls");
+        
     }
 
 }

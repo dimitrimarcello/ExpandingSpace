@@ -17,8 +17,8 @@ public class achievementbutton : MonoBehaviour
 
     private void TaskOnClick()
     {
-        //SceneManager.LoadScene("Achievements");
-        Initiate.Fade("Achievements", Color.black, 1.0f);
+        SceneManager.LoadScene("Achievements");
+        
     }
 
 }
