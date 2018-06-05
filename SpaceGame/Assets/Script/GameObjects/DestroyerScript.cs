@@ -53,7 +53,7 @@ public class DestroyerScript : MonoBehaviour {
     {
         if(corect == true)
         {
-            Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(24, 25), 4 - Random.Range(1, 8));
+            Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(27, 28), 4 - Random.Range(1, 8));
             GameObject holes = Instantiate(obj[Random.Range(0, obj.GetLength(0))], spawnLocation, Quaternion.identity);
             corect = false;
             return;
