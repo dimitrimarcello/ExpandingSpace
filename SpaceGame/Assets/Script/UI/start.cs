@@ -17,7 +17,10 @@ public class start : MonoBehaviour
 
     private void TaskOnClick()
     {
-        SceneManager.LoadScene("Controlls");
+
+        SceneManager.LoadScene("MainGame");
+
+      
 
         //Initiate.Fade("MainGame", Color.black, 1.0f);
     }
