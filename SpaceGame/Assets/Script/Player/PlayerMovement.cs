@@ -58,6 +58,23 @@ public class PlayerMovement : MonoBehaviour {
             }
             return;
         }
+        for(int i = 0; i < Input.touchCount; ++i)
+        {
+            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                animations.Play("Jump");
+                if (canJump == true)
+                {
+                    Player.AddForce((17.5f * jetPackJump) * transform.up, ForceMode2D.Impulse);
+                    canJump = false;
+                }
+                else
+                {
+                    Player.AddForce((1 * jetPackJump) * transform.up, ForceMode2D.Impulse);
+                }
+                return;
+            }
+        }
 
 
         if (Input.GetButton("Fire1"))
