@@ -17,7 +17,7 @@ public class SpawnScript : MonoBehaviour {
         warning.SetActive(false);
         playerRange = _player.position.x + 40;
 	}
-    private void Update()
+    private void FixedUpdate()
     {
         if(_player.position.x >= playerRange && doIt == true)
         {

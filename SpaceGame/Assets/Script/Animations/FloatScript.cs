@@ -29,7 +29,7 @@ public class FloatScript : MonoBehaviour
                 targetWayPoint = wayPointList[currentWayPoint];
             walk();
         }
-        transform.localScale += new Vector3(0.0005f, 0.0005f, 0);
+        transform.localScale += new Vector3(0.00005f, 0.00005f, 0);
     }
 
     void walk()

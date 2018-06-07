@@ -17,7 +17,7 @@ public class restart : MonoBehaviour {
     {
         SceneManager.LoadScene("MainGame");
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -25,7 +25,13 @@ public class restart : MonoBehaviour {
             SceneManager.LoadScene("MainGame");
         }
 
-        
+        for (int i = 0; i < Input.touchCount; ++i)
+        {
+            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                SceneManager.LoadScene("MainGame");
+            }
+        }
     }
 
 }

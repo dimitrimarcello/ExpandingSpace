@@ -12,7 +12,7 @@ public class Achievements : MonoBehaviour {
         highScore = PlayerPrefs.GetFloat("HighScore", 0);
         tiers[8].text = "HighScore: " + highScore;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if(highScore > 5000)
         {

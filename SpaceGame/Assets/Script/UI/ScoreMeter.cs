@@ -16,7 +16,7 @@ public class ScoreMeter : MonoBehaviour {
         highScore = PlayerPrefs.GetFloat("HighScore", 0);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         scorePlayer = Vector3.Distance(player.position, startDistance.position);
         scorePlayer = Mathf.Round(scorePlayer * 100f);

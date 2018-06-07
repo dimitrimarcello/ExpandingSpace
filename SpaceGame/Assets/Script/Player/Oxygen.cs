@@ -13,7 +13,7 @@ public class Oxygen : MonoBehaviour {
     public Animator oxygen;
     public Animator oxygenSpecial;
 
-    private void Update()
+    private void FixedUpdate()
     {
         timerSlide.value = oxygenTime;
         roundUp = Mathf.Round(oxygenTime);

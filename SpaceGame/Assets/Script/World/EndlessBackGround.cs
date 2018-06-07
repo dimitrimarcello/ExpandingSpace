@@ -27,7 +27,7 @@ public class EndlessBackGround : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Debug.DrawLine(new Vector3(spawnOffset, -10, 0), new Vector3(spawnOffset, 10, 0));
         if (Player.position.x >= spawnOffset)

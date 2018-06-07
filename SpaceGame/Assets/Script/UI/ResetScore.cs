@@ -7,7 +7,7 @@ public class ResetScore : MonoBehaviour {
     private bool E = false;
     private bool S = false;
     private bool T = false;
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {

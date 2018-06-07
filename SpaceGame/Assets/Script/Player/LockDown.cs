@@ -12,7 +12,7 @@ public class LockDown : MonoBehaviour {
     {
         player = GetComponent<Transform>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if(player.position.x <= -10)
         {

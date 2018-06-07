@@ -8,25 +8,26 @@ public class DestroyerScript : MonoBehaviour {
     //SceneController controller;
     public GameObject[] obj;
     public GameObject imageWarning;
+    public Transform planetSpawner;
     private bool corect;
-    private void Start()
+    float _planetSpawner;
+    private void Update()
     {
-        
+        _planetSpawner = planetSpawner.position.x;
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         
-        if(other.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("gameOver");
             return;
         }
-        else if (other.tag == "Destroyer")
+        else if (other.gameObject.tag == "Destroyer")
         {
             return;
         }
-        else if(other.tag == "Planet")
+        else if(other.gameObject.tag == "Planet")
         {
             Destroy(other.gameObject);
             corect = true;
@@ -34,7 +35,7 @@ public class DestroyerScript : MonoBehaviour {
             return;
 
         }
-        else if(other.tag == "BlackHole")
+        else if(other.gameObject.tag == "BlackHole")
         {
             imageWarning.SetActive(false);
             Destroy(other.gameObject);
@@ -53,7 +54,7 @@ public class DestroyerScript : MonoBehaviour {
     {
         if(corect == true)
         {
-            Vector2 spawnLocation = new Vector2(transform.position.x + Random.Range(27, 28), 4 - Random.Range(1, 8));
+            Vector2 spawnLocation = new Vector2(_planetSpawner, 4 - Random.Range(1, 8));
             GameObject holes = Instantiate(obj[Random.Range(0, obj.GetLength(0))], spawnLocation, Quaternion.identity);
             corect = false;
             return;

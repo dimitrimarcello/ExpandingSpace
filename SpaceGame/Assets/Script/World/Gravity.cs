@@ -24,7 +24,7 @@ public class Gravity : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate() {
         planet = GameObject.FindGameObjectsWithTag("Planet");
         blackHole = GameObject.FindGameObjectsWithTag("BlackHole");
         //this is used for the planet gravity pull

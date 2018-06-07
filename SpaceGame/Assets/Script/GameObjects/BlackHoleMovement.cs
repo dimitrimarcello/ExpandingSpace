@@ -10,7 +10,7 @@ public class BlackHoleMovement : MonoBehaviour {
 	void Start () {
         blackHole = GetComponent<Rigidbody2D>();
     }
-    void Update()
+    void FixedUpdate()
     {
         blackHole.AddForce(Vector2.left * blackHoleSpeed);
     }

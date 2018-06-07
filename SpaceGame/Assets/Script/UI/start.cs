@@ -17,12 +17,12 @@ public class start : MonoBehaviour
 
     private void TaskOnClick()
     {
-        SceneManager.LoadScene("Controlls");
+        SceneManager.LoadScene("MainGame");
 
         //Initiate.Fade("MainGame", Color.black, 1.0f);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {

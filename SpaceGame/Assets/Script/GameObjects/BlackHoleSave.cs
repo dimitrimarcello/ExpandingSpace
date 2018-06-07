@@ -14,7 +14,7 @@ public class BlackHoleSave : MonoBehaviour {
         warning = GameObject.FindGameObjectsWithTag("Warning");
         blackHole = GetComponent<Transform>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         destroy = _plyr.position.x - 5;
         if(blackHole.position.x < destroy)

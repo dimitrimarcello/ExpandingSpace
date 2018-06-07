@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
             animations.Play("Jump");
             if (canJump == true)
             {
-                Player.AddForce((17.5f * jetPackJump) * transform.up, ForceMode2D.Impulse);
+                Player.AddForce((15f * jetPackJump) * transform.up, ForceMode2D.Impulse);
                 canJump = false;
             }
             else

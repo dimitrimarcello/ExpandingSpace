@@ -31,7 +31,7 @@ public class PauseGame : MonoBehaviour
             checkPause = false;
         }
     }
-        void Update()
+        void FixedUpdate()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
