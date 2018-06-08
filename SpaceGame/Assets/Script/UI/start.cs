@@ -17,16 +17,12 @@ public class start : MonoBehaviour
 
     private void TaskOnClick()
     {
-<<<<<<< HEAD
-        SceneManager.LoadScene("MainGame");
-=======
+
 
         SceneManager.LoadScene("MainGame");
 
       
->>>>>>> d3afa4c2facaf53b2b9c34e9a8cc2e0645cb78ff
 
-        //Initiate.Fade("MainGame", Color.black, 1.0f);
     }
 
     private void FixedUpdate()
